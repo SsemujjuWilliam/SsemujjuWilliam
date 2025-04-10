@@ -1,5 +1,4 @@
-
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail, Twitter, WhatsApp } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -50,6 +49,15 @@ const Footer = () => {
               aria-label="Email"
             >
               <Mail size={20} />
+            </a>
+            <a 
+              href="https://wa.me/message/C6YVX7OIAJLVN1" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-full hover:bg-background/10 transition-colors"
+              aria-label="WhatsApp"
+            >
+              <WhatsApp size={20} />
             </a>
           </div>
         </div>
