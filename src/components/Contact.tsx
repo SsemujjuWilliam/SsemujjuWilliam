@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -163,7 +162,9 @@ const Contact = () => {
                 <h3 className="text-xl font-semibold mb-4">Connect With Me</h3>
                 <div className="flex gap-4">
                   <a 
-                    href="#" 
+                    href="https://www.linkedin.com/in/ssemujju-william-63b44727b" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="p-3 rounded-full bg-white border border-border hover:bg-primary hover:text-white transition-colors"
                     aria-label="LinkedIn"
                   >

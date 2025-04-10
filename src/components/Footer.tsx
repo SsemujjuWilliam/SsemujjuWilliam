@@ -1,4 +1,3 @@
-
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 
 const Footer = () => {
@@ -19,18 +18,20 @@ const Footer = () => {
           
           <div className="flex space-x-4">
             <a 
+              href="https://www.linkedin.com/in/ssemujju-william-63b44727b" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-full hover:bg-background/10 transition-colors"
+              aria-label="LinkedIn"
+            >
+              <Linkedin size={20} />
+            </a>
+            <a 
               href="#" 
               className="p-2 rounded-full hover:bg-background/10 transition-colors"
               aria-label="GitHub"
             >
               <Github size={20} />
-            </a>
-            <a 
-              href="#" 
-              className="p-2 rounded-full hover:bg-background/10 transition-colors"
-              aria-label="LinkedIn"
-            >
-              <Linkedin size={20} />
             </a>
             <a 
               href="#" 
