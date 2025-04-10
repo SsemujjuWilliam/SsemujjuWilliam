@@ -8,36 +8,36 @@ import { motion } from "framer-motion";
 const Projects = () => {
   const projects = [
     {
-      title: "Predictive Customer Analytics",
-      description: "Developed a machine learning model to predict customer churn with 92% accuracy, helping a SaaS company reduce churn by 24%.",
+      title: "Total Data Analysis",
+      description: "Data analysis and visualization project for medical data, demonstrating skills in data preprocessing, exploration, and insights generation.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-      tags: ["Machine Learning", "Python", "Scikit-learn", "Pandas"],
-      githubLink: "https://github.com",
-      liveLink: "#"
+      tags: ["Python", "Pandas", "Data Analysis", "NumPy"],
+      githubLink: "https://github.com/SsemujjuWilliam/Total-data-analysis",
+      liveLink: "https://github.com/SsemujjuWilliam/Total-data-analysis"
     },
     {
-      title: "NLP-Powered Review Analysis",
-      description: "Created a sentiment analysis tool that processes customer reviews and extracts key insights using natural language processing techniques.",
+      title: "Data Visualization Dashboard",
+      description: "Interactive visualization dashboard for HR data analysis, providing insights into employee performance and organizational metrics.",
       image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-      tags: ["NLP", "BERT", "TensorFlow", "Python"],
-      githubLink: "https://github.com",
-      liveLink: "#"
+      tags: ["Python", "Matplotlib", "Data Visualization", "HR Analytics"],
+      githubLink: "https://github.com/SsemujjuWilliam/data_viz_dash",
+      liveLink: "https://github.com/SsemujjuWilliam/data_viz_dash"
     },
     {
-      title: "Healthcare Data Dashboard",
-      description: "Built an interactive dashboard for healthcare providers to visualize patient data and identify trends in treatment effectiveness.",
+      title: "COVID-19 Data Analysis",
+      description: "Analysis of COVID-19 data to identify patterns and insights, with visualizations of case trends across different regions.",
       image: "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-      tags: ["Tableau", "SQL", "Data Visualization", "Healthcare Analytics"],
-      githubLink: "https://github.com",
-      liveLink: "#"
+      tags: ["Python", "Data Analysis", "Healthcare Analytics", "Visualization"],
+      githubLink: "https://github.com/SsemujjuWilliam/COVID-19",
+      liveLink: "https://github.com/SsemujjuWilliam/COVID-19"
     },
     {
-      title: "Financial Time Series Forecasting",
-      description: "Implemented a deep learning model to forecast stock prices using LSTM networks, achieving 15% better accuracy than traditional methods.",
+      title: "General Data Analysis",
+      description: "Comprehensive data analysis project showcasing data cleaning, preprocessing, and visualization techniques for varied datasets.",
       image: "https://images.unsplash.com/photo-1535320903710-d993d3d77d29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-      tags: ["PyTorch", "Time Series", "LSTM", "Financial Analysis"],
-      githubLink: "https://github.com",
-      liveLink: "#"
+      tags: ["Python", "Pandas", "Data Science", "Statistical Analysis"],
+      githubLink: "https://github.com/SsemujjuWilliam/GENERAL-DATA-ANALYSIS",
+      liveLink: "https://github.com/SsemujjuWilliam/GENERAL-DATA-ANALYSIS"
     }
   ];
   
@@ -54,7 +54,7 @@ const Projects = () => {
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Featured Projects</h2>
           <div className="h-1 w-20 bg-accent mx-auto mb-6"></div>
           <p className="text-foreground/70 max-w-2xl mx-auto">
-            A selection of my data science projects showcasing machine learning models, 
+            A selection of my data science projects showcasing data analysis, 
             data visualizations, and analytical solutions to real-world problems.
           </p>
         </motion.div>
@@ -93,13 +93,13 @@ const Projects = () => {
                   </CardDescription>
                 </CardContent>
                 <CardFooter className="flex justify-between">
-                  <Button variant="outline" size="sm">
+                  <Button variant="outline" size="sm" as="a" href={project.githubLink} target="_blank" rel="noopener noreferrer">
                     <Github className="mr-2 h-4 w-4" />
                     Code
                   </Button>
-                  <Button size="sm">
+                  <Button size="sm" as="a" href={project.liveLink} target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="mr-2 h-4 w-4" />
-                    Live Demo
+                    View Project
                   </Button>
                 </CardFooter>
               </Card>
@@ -108,7 +108,9 @@ const Projects = () => {
         </div>
         
         <div className="flex justify-center mt-8">
-          <Button variant="outline">View More Projects</Button>
+          <Button variant="outline" as="a" href="https://github.com/SsemujjuWilliam" target="_blank" rel="noopener noreferrer">
+            View More Projects on GitHub
+          </Button>
         </div>
       </div>
     </section>

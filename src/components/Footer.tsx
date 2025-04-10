@@ -1,3 +1,4 @@
+
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 
 const Footer = () => {
@@ -27,7 +28,9 @@ const Footer = () => {
               <Linkedin size={20} />
             </a>
             <a 
-              href="#" 
+              href="https://github.com/SsemujjuWilliam" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-2 rounded-full hover:bg-background/10 transition-colors"
               aria-label="GitHub"
             >
@@ -41,7 +44,7 @@ const Footer = () => {
               <Twitter size={20} />
             </a>
             <a 
-              href="mailto:alex.johnson@example.com" 
+              href="mailto:ssemujjuwilliam@gmail.com" 
               className="p-2 rounded-full hover:bg-background/10 transition-colors"
               aria-label="Email"
             >
@@ -54,7 +57,7 @@ const Footer = () => {
         
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-background/70">
-            &copy; {currentYear} Alex Johnson. All rights reserved.
+            &copy; {currentYear} Ssemujju William. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-sm text-background/70 hover:text-background">Privacy Policy</a>

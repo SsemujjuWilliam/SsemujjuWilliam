@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -40,9 +41,9 @@ const Contact = () => {
   };
   
   const contactInfo = [
-    { icon: <Mail />, label: "Email", value: "alex.johnson@example.com" },
-    { icon: <Phone />, label: "Phone", value: "+1 (555) 123-4567" },
-    { icon: <MapPin />, label: "Location", value: "San Francisco, CA" }
+    { icon: <Mail />, label: "Email", value: "ssemujjuwilliam@gmail.com" },
+    { icon: <Phone />, label: "Phone", value: "+256 771 123456" },
+    { icon: <MapPin />, label: "Location", value: "Kampala, Uganda" }
   ];
   
   return (
@@ -171,7 +172,9 @@ const Contact = () => {
                     <Linkedin size={20} />
                   </a>
                   <a 
-                    href="#" 
+                    href="https://github.com/SsemujjuWilliam" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="p-3 rounded-full bg-white border border-border hover:bg-primary hover:text-white transition-colors"
                     aria-label="GitHub"
                   >
@@ -191,7 +194,7 @@ const Contact = () => {
                 <h3 className="text-xl font-semibold mb-4">Office Location</h3>
                 <div className="rounded-lg overflow-hidden border border-border h-60">
                   <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100940.14245968247!2d-122.43759999999999!3d37.75769999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1583034994411!5m2!1sen!2sus" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127672.75772082225!2d32.5472257371521!3d0.3177049654069289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbc0f8b19684d%3A0x8442ab898f916bdf!2sKampala%2C%20Uganda!5e0!3m2!1sen!2sus!4v1653697051747!5m2!1sen!2sus" 
                     width="100%" 
                     height="100%" 
                     style={{ border: 0 }} 
