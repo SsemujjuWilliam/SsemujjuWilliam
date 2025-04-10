@@ -93,14 +93,18 @@ const Projects = () => {
                   </CardDescription>
                 </CardContent>
                 <CardFooter className="flex justify-between">
-                  <Button variant="outline" size="sm" as="a" href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                    <Github className="mr-2 h-4 w-4" />
-                    Code
-                  </Button>
-                  <Button size="sm" as="a" href={project.liveLink} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    View Project
-                  </Button>
+                  <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" size="sm">
+                      <Github className="mr-2 h-4 w-4" />
+                      Code
+                    </Button>
+                  </a>
+                  <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                    <Button size="sm">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      View Project
+                    </Button>
+                  </a>
                 </CardFooter>
               </Card>
             </motion.div>
@@ -108,9 +112,11 @@ const Projects = () => {
         </div>
         
         <div className="flex justify-center mt-8">
-          <Button variant="outline" as="a" href="https://github.com/SsemujjuWilliam" target="_blank" rel="noopener noreferrer">
-            View More Projects on GitHub
-          </Button>
+          <a href="https://github.com/SsemujjuWilliam" target="_blank" rel="noopener noreferrer">
+            <Button variant="outline">
+              View More Projects on GitHub
+            </Button>
+          </a>
         </div>
       </div>
     </section>
