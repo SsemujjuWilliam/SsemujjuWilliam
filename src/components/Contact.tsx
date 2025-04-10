@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -41,7 +40,7 @@ const Contact = () => {
   };
   
   const contactInfo = [
-    { icon: <Mail />, label: "Email", value: "ssemujjuwilliam@gmail.com" },
+    { icon: <Mail />, label: "Email", value: "SsemujjuWilliam@outlook.com" },
     { icon: <Phone />, label: "Phone", value: "+256 771 123456" },
     { icon: <MapPin />, label: "Location", value: "Kampala, Uganda" }
   ];
@@ -163,7 +162,7 @@ const Contact = () => {
                 <h3 className="text-xl font-semibold mb-4">Connect With Me</h3>
                 <div className="flex gap-4">
                   <a 
-                    href="https://www.linkedin.com/in/ssemujju-william-63b44727b" 
+                    href="https://www.linkedin.com/in/william-ssemujju/" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 rounded-full bg-white border border-border hover:bg-primary hover:text-white transition-colors"
@@ -181,7 +180,9 @@ const Contact = () => {
                     <Github size={20} />
                   </a>
                   <a 
-                    href="#" 
+                    href="https://twitter.com/SsemujjuWilliam" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="p-3 rounded-full bg-white border border-border hover:bg-primary hover:text-white transition-colors"
                     aria-label="Twitter"
                   >

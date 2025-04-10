@@ -10,7 +10,7 @@ import Footer from '../components/Footer';
 
 const Index = () => {
   useEffect(() => {
-    document.title = 'Ssemujju William | Data Scientist';
+    document.title = 'William Ssemujju | AI Engineer & Data Scientist';
   }, []);
 
   return (

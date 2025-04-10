@@ -10,16 +10,17 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <h3 className="font-heading font-bold text-2xl">
-              <span className="text-accent">Data</span>Sci
+              <span className="text-accent">William</span> Ssemujju
             </h3>
             <p className="mt-2 text-background/70 max-w-md">
-              Translating complex data into actionable insights to drive business value and innovation.
+              Passionate Artificial Intelligence Engineer crafting impactful and innovative solutions, 
+              infused with a touch of Ugandan ingenuity.
             </p>
           </div>
           
           <div className="flex space-x-4">
             <a 
-              href="https://www.linkedin.com/in/ssemujju-william-63b44727b" 
+              href="https://www.linkedin.com/in/william-ssemujju/" 
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-full hover:bg-background/10 transition-colors"
@@ -37,14 +38,14 @@ const Footer = () => {
               <Github size={20} />
             </a>
             <a 
-              href="#" 
+              href="https://twitter.com/SsemujjuWilliam" 
               className="p-2 rounded-full hover:bg-background/10 transition-colors"
               aria-label="Twitter"
             >
               <Twitter size={20} />
             </a>
             <a 
-              href="mailto:ssemujjuwilliam@gmail.com" 
+              href="mailto:SsemujjuWilliam@outlook.com" 
               className="p-2 rounded-full hover:bg-background/10 transition-colors"
               aria-label="Email"
             >
@@ -57,7 +58,7 @@ const Footer = () => {
         
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-background/70">
-            &copy; {currentYear} Ssemujju William. All rights reserved.
+            &copy; {currentYear} William Ssemujju. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-sm text-background/70 hover:text-background">Privacy Policy</a>

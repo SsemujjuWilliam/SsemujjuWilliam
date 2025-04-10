@@ -13,7 +13,7 @@ const About = () => {
     { 
       icon: <LineChart />, 
       title: "Machine Learning", 
-      description: "Expert in developing predictive models using supervised and unsupervised learning techniques." 
+      description: "Expert in developing predictive models using TensorFlow, PyTorch, and scikit-learn." 
     },
     { 
       icon: <Code />, 
@@ -22,8 +22,8 @@ const About = () => {
     },
     { 
       icon: <BookOpen />, 
-      title: "Research", 
-      description: "Published research in the field of natural language processing and computer vision." 
+      title: "Cloud Computing", 
+      description: "Skilled in AWS, Azure, and GCP for deploying scalable machine learning solutions." 
     },
   ];
 
@@ -40,8 +40,8 @@ const About = () => {
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">About Me</h2>
             <div className="h-1 w-20 bg-accent mx-auto mb-6"></div>
             <p className="text-foreground/70 max-w-2xl mx-auto">
-              With 7+ years of experience in the data science field, I've helped organizations 
-              make data-driven decisions and implement AI solutions that drive business value.
+              Business professional with a passion for leveraging AI, ML, and Deep Learning to drive impactful 
+              business decisions, particularly within the Ugandan context.
             </p>
           </motion.div>
         </div>
@@ -56,17 +56,17 @@ const About = () => {
           >
             <h3 className="text-2xl font-heading font-semibold mb-4">My Journey</h3>
             <p className="text-foreground/70 mb-4">
-              I began my data science journey after completing my Master's in Applied Mathematics. 
-              Since then, I've worked with startups and Fortune 500 companies across finance, 
-              healthcare, and e-commerce industries.
+              I specialize in building robust and scalable machine learning solutions, leveraging a diverse skillset 
+              spanning front-end and back-end development, as well as cloud infrastructure.
             </p>
             <p className="text-foreground/70 mb-4">
-              My passion lies in solving complex problems through data analysis and building 
-              machine learning models that provide actionable insights.
+              I'm a continuous learner, always exploring new technologies, particularly in cloud computing, 
+              machine learning, and blockchain. I believe in the power of technology to transform lives, 
+              especially here in Uganda.
             </p>
             <div className="flex items-center gap-2 text-accent">
               <Award size={20} />
-              <span className="font-medium">PhD in Computer Science, Stanford University</span>
+              <span className="font-medium">B.S. in Business Statistics, Makerere University Business School</span>
             </div>
           </motion.div>
           

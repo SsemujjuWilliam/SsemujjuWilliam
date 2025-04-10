@@ -55,7 +55,7 @@ const Projects = () => {
           <div className="h-1 w-20 bg-accent mx-auto mb-6"></div>
           <p className="text-foreground/70 max-w-2xl mx-auto">
             A selection of my data science projects showcasing data analysis, 
-            data visualizations, and analytical solutions to real-world problems.
+            data visualizations, and analytical solutions to real-world problems with a focus on the Ugandan context.
           </p>
         </motion.div>
         

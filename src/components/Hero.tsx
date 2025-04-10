@@ -16,24 +16,28 @@ const Hero = () => {
             >
               <p className="text-accent font-medium mb-2">Hello, I'm</p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-4">
-                Alex Johnson
+                William Ssemujju
               </h1>
               <h2 className="text-2xl md:text-3xl text-foreground/80 mb-6">
-                Data <span className="gradient-text font-semibold">Scientist</span> & ML Engineer
+                Artificial Intelligence <span className="gradient-text font-semibold">Engineer</span> & Data Scientist
               </h2>
               <p className="text-foreground/70 max-w-md mb-8">
-                I transform complex data into clear insights and actionable strategies. 
-                Specializing in machine learning and visualization to solve real-world problems.
+                Business professional leveraging AI, ML, and Deep Learning for impactful business decisions, particularly within the Ugandan context. 
+                Specializing in building robust and scalable machine learning solutions.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Button>
-                  <Mail className="mr-2 h-4 w-4" />
-                  Contact Me
-                </Button>
-                <Button variant="outline">
-                  <Github className="mr-2 h-4 w-4" />
-                  GitHub
-                </Button>
+                <a href="#contact">
+                  <Button>
+                    <Mail className="mr-2 h-4 w-4" />
+                    Contact Me
+                  </Button>
+                </a>
+                <a href="https://github.com/SsemujjuWilliam" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline">
+                    <Github className="mr-2 h-4 w-4" />
+                    GitHub
+                  </Button>
+                </a>
               </div>
             </motion.div>
           </div>
@@ -49,7 +53,7 @@ const Hero = () => {
               <div className="relative bg-card rounded-full overflow-hidden border border-border w-64 h-64 md:w-80 md:h-80">
                 <img
                   src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                  alt="Data Scientist Portrait"
+                  alt="William Ssemujju Portrait"
                   className="w-full h-full object-cover"
                 />
               </div>
