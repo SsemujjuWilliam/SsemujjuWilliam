@@ -11,34 +11,46 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const showcaseItems = [
   {
-    title: "Deep Learning Journey",
-    description: "Exploring neural networks and advanced AI architectures to solve complex problems.",
-    imagePlaceholder: "/placeholder.svg",
-    alt: "Deep Learning Visualization"
+    title: "About Me",
+    description: "My journey into data science began with a passion for solving problems and understanding patterns in data.",
+    image: "/lovable-uploads/ea36f03d-5995-4f43-8fcd-97be89bfa083.png",
+    alt: "Personal portrait photo"
   },
   {
-    title: "Data Analysis in Action",
-    description: "Transforming raw data into actionable insights through statistical analysis and visualization.",
-    imagePlaceholder: "/placeholder.svg",
-    alt: "Data Analysis Dashboard"
+    title: "Academic Achievement",
+    description: "Graduated with honors, ready to apply my knowledge in AI and data science to real-world challenges.",
+    image: "/lovable-uploads/25edd7ef-80b5-407b-82b1-97846ad4ac55.png",
+    alt: "Graduation day photo"
   },
   {
-    title: "Machine Learning Models",
-    description: "Building and training robust models that drive predictive analytics and decision making.",
-    imagePlaceholder: "/placeholder.svg",
-    alt: "Machine Learning Model Diagram"
+    title: "Early Coding Days",
+    description: "One of my first programs at age 16 - a simple algorithm to find the largest and smallest numbers in a list.",
+    image: "/lovable-uploads/172f9e44-fdbd-4fee-ae06-c5c47ac1e82d.png",
+    alt: "Early Python code screenshot"
   },
   {
-    title: "Ugandan Data Science",
-    description: "Applying data science techniques to local problems and creating impact in Uganda.",
-    imagePlaceholder: "/placeholder.svg",
-    alt: "Uganda-focused Data Project"
+    title: "Team Collaboration",
+    description: "I believe in the power of teamwork to tackle complex data challenges and create innovative solutions.",
+    image: "/lovable-uploads/60b9d967-8f7b-47c2-89e6-55ce3aeaefed.png",
+    alt: "Team photo with colleagues"
   },
   {
-    title: "Collaborative Research",
-    description: "Working with teams to push the boundaries of AI research and implementation.",
-    imagePlaceholder: "/placeholder.svg",
-    alt: "Research Collaboration"
+    title: "Friends & Support",
+    description: "Building a strong network of peers who share my passion for technology and innovation.",
+    image: "/lovable-uploads/44519701-15af-4fa1-ba72-faea0b8a24eb.png",
+    alt: "With friends photo"
+  },
+  {
+    title: "Nature Lover",
+    description: "Finding inspiration in nature's patterns and complexity - a perfect complement to data science thinking.",
+    image: "/lovable-uploads/56d02a3c-f858-4f14-a715-d650b22d4e9b.png",
+    alt: "Nature exploration photo"
+  },
+  {
+    title: "Community Outreach",
+    description: "Sharing knowledge and spreading positive impact through community engagement and outreach programs.",
+    image: "/lovable-uploads/ea2ac6fa-e375-402e-9e39-4cfac564ec27.png",
+    alt: "Community outreach photo"
   }
 ];
 
@@ -83,7 +95,7 @@ const Showcase = () => {
                     <CardContent className="p-0">
                       <div className="aspect-video w-full overflow-hidden bg-muted">
                         <img 
-                          src={item.imagePlaceholder} 
+                          src={item.image} 
                           alt={item.alt} 
                           className="w-full h-full object-cover transition-transform hover:scale-105"
                         />
