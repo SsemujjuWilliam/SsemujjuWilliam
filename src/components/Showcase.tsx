@@ -41,7 +41,7 @@ const showcaseItems = [{
 }];
 
 const Showcase = () => {
-  return <section id="showcase" className="section-padding bg-secondary/50">
+  return <section id="showcase" className="section-padding bg-secondary/50 dark:bg-background/30">
       <div className="container mx-auto">
         <motion.div initial={{
         opacity: 0,
@@ -79,9 +79,9 @@ const Showcase = () => {
         }} className="w-full">
             <CarouselContent>
               {showcaseItems.map((item, index) => <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 pl-4">
-                  <Card className="data-card h-full">
+                  <Card className="data-card h-full dark:bg-card/5 dark:backdrop-blur-sm dark:border-border/30 dark:hover:shadow-accent/5">
                     <CardContent className="p-0">
-                      <div className="aspect-video w-full overflow-hidden bg-muted">
+                      <div className="aspect-video w-full overflow-hidden bg-muted dark:bg-muted/20">
                         <img src={item.image} alt={item.alt} className="w-full h-full transition-transform hover:scale-105 object-cover" />
                       </div>
                       <div className="p-6">
