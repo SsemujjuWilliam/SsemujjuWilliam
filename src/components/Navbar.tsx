@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { MenuIcon, X } from "lucide-react";
 import { cn } from "@/lib/utils";
-import ThemeToggle from './ThemeToggle';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,7 +26,7 @@ const Navbar = () => {
         </a>
         
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-6">
+        <nav className="hidden md:flex space-x-6">
           {navItems.map((item) => (
             <a 
               key={item.label}
@@ -37,20 +36,16 @@ const Navbar = () => {
               {item.label}
             </a>
           ))}
-          <ThemeToggle />
           <Button variant="default" size="sm">Resume</Button>
         </nav>
         
         {/* Mobile Navigation Toggle */}
-        <div className="flex items-center gap-2 md:hidden">
-          <ThemeToggle />
-          <button 
-            onClick={toggleMenu}
-            className="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/30"
-          >
-            {isMenuOpen ? <X size={24} /> : <MenuIcon size={24} />}
-          </button>
-        </div>
+        <button 
+          onClick={toggleMenu}
+          className="md:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/30"
+        >
+          {isMenuOpen ? <X size={24} /> : <MenuIcon size={24} />}
+        </button>
       </div>
       
       {/* Mobile Menu */}
