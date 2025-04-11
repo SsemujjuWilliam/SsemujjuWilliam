@@ -1,8 +1,6 @@
-
 import { motion } from "framer-motion";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
-
 const showcaseItems = [{
   title: "About Me",
   description: "My journey into data science began with a passion for solving problems and understanding patterns in data.",
@@ -39,7 +37,6 @@ const showcaseItems = [{
   image: "/lovable-uploads/5893fa89-5199-4b8e-96fe-80cd9d4e372a.png",
   alt: "Community outreach photo"
 }];
-
 const Showcase = () => {
   return <section id="showcase" className="section-padding bg-secondary/50 dark:bg-background/30">
       <div className="container mx-auto">
@@ -81,8 +78,8 @@ const Showcase = () => {
               {showcaseItems.map((item, index) => <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 pl-4">
                   <Card className="data-card h-full dark:bg-card/5 dark:backdrop-blur-sm dark:border-border/30 dark:hover:shadow-accent/5">
                     <CardContent className="p-0">
-                      <div className="aspect-video w-full overflow-hidden bg-muted dark:bg-muted/20">
-                        <img src={item.image} alt={item.alt} className="w-full h-full transition-transform hover:scale-105 object-cover" />
+                      <div className="aspect-video w-full overflow-hidden bg-muted dark:bg-muted/20 rounded-full">
+                        
                       </div>
                       <div className="p-6">
                         <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
@@ -118,5 +115,4 @@ const Showcase = () => {
       </div>
     </section>;
 };
-
 export default Showcase;
