@@ -52,7 +52,7 @@ const Hero = () => {
               <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-primary to-accent blur-md opacity-70"></div>
               <div className="relative bg-card rounded-full overflow-hidden border border-border w-64 h-64 md:w-80 md:h-80">
                 <img
-                  src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                  src="/lovable-uploads/1e89e731-c5e8-44e6-9116-0776cb50e99a.png"
                   alt="William Ssemujju Portrait"
                   className="w-full h-full object-cover"
                 />
