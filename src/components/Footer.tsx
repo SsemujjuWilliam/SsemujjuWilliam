@@ -1,4 +1,5 @@
-import { Github, Linkedin, Mail, Twitter, WhatsApp } from "lucide-react";
+
+import { Github, Linkedin, Mail, Twitter, MessageSquare } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -57,7 +58,7 @@ const Footer = () => {
               className="p-2 rounded-full hover:bg-background/10 transition-colors"
               aria-label="WhatsApp"
             >
-              <WhatsApp size={20} />
+              <MessageSquare size={20} />
             </a>
           </div>
         </div>

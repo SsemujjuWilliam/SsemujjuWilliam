@@ -1,10 +1,11 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
-import { Mail, Phone, MapPin, Send, Linkedin, Twitter, Github, WhatsApp } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Linkedin, Twitter, Github, MessageSquare } from "lucide-react";
 import { motion } from "framer-motion";
 
 const Contact = () => {
@@ -195,7 +196,7 @@ const Contact = () => {
                     className="p-3 rounded-full bg-white border border-border hover:bg-primary hover:text-white transition-colors"
                     aria-label="WhatsApp"
                   >
-                    <WhatsApp size={20} />
+                    <MessageSquare size={20} />
                   </a>
                 </div>
               </div>
