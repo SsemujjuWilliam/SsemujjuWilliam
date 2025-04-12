@@ -42,7 +42,12 @@
 }
 
 /* Remove underlines from all links and buttons */
-a, button, .btn {
+a, button, .btn, a.btn, button.btn, a button, button a {
+  text-decoration: none !important;
+}
+
+/* Remove underlines from all links and buttons and their children */
+a *, button *, .btn * {
   text-decoration: none !important;
 }
 
@@ -55,5 +60,28 @@ a, button, .btn {
   .container {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+}
+
+/* Ensure the project cards display properly */
+.data-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.data-card img {
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
+
+/* Responsive grid adjustments */
+.grid {
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 }

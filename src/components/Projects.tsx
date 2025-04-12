@@ -8,6 +8,30 @@ import { motion } from "framer-motion";
 const Projects = () => {
   const projects = [
     {
+      title: "Breast Cancer Prediction",
+      description: "Machine learning model to predict breast cancer diagnosis (malignant/benign) with high accuracy using Wisconsin Diagnostic dataset and various ML algorithms.",
+      image: "https://images.unsplash.com/photo-1579154341098-e4e158cc7f55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      tags: ["Python", "Scikit-Learn", "Medical AI", "Classification"],
+      githubLink: "https://github.com/SsemujjuWilliam/breast-cancer-prediction",
+      liveLink: "https://github.com/SsemujjuWilliam/breast-cancer-prediction"
+    },
+    {
+      title: "Customer Churn Prediction",
+      description: "Developed a predictive model to identify customers likely to churn, helping businesses implement targeted retention strategies and reduce customer loss.",
+      image: "https://images.unsplash.com/photo-1556155092-490a1ba16284?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      tags: ["Python", "Machine Learning", "Business Analytics", "XGBoost"],
+      githubLink: "https://github.com/SsemujjuWilliam/customer-churn-prediction",
+      liveLink: "https://github.com/SsemujjuWilliam/customer-churn-prediction"
+    },
+    {
+      title: "Stock Price Prediction",
+      description: "Time series analysis and prediction model for stock prices using LSTM neural networks, integrating market sentiment analysis for improved accuracy.",
+      image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      tags: ["Python", "Deep Learning", "LSTM", "Financial Analysis"],
+      githubLink: "https://github.com/SsemujjuWilliam/stock-price-prediction",
+      liveLink: "https://github.com/SsemujjuWilliam/stock-price-prediction"
+    },
+    {
       title: "Total Data Analysis",
       description: "Data analysis and visualization project for medical data, demonstrating skills in data preprocessing, exploration, and insights generation.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
@@ -30,14 +54,6 @@ const Projects = () => {
       tags: ["Python", "Data Analysis", "Healthcare Analytics", "Visualization"],
       githubLink: "https://github.com/SsemujjuWilliam/COVID-19",
       liveLink: "https://github.com/SsemujjuWilliam/COVID-19"
-    },
-    {
-      title: "General Data Analysis",
-      description: "Comprehensive data analysis project showcasing data cleaning, preprocessing, and visualization techniques for varied datasets.",
-      image: "https://images.unsplash.com/photo-1535320903710-d993d3d77d29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-      tags: ["Python", "Pandas", "Data Science", "Statistical Analysis"],
-      githubLink: "https://github.com/SsemujjuWilliam/GENERAL-DATA-ANALYSIS",
-      liveLink: "https://github.com/SsemujjuWilliam/GENERAL-DATA-ANALYSIS"
     }
   ];
   
@@ -59,7 +75,7 @@ const Projects = () => {
           </p>
         </motion.div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
