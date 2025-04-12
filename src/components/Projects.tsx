@@ -42,24 +42,24 @@ const Projects = () => {
   ];
   
   return (
-    <section id="projects" className="section-padding">
+    <section id="projects" className="section-padding bg-secondary/50">
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
+          className="text-center mb-8"
         >
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Featured Projects</h2>
-          <div className="h-1 w-20 bg-accent mx-auto mb-6"></div>
+          <div className="h-1 w-20 bg-accent mx-auto mb-4"></div>
           <p className="text-foreground/70 max-w-2xl mx-auto">
             A selection of my data science projects showcasing data analysis, 
             data visualizations, and analytical solutions to real-world problems with a focus on the Ugandan context.
           </p>
         </motion.div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
@@ -94,13 +94,13 @@ const Projects = () => {
                 </CardContent>
                 <CardFooter className="flex justify-between">
                   <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                    <Button variant="outline" size="sm">
+                    <Button variant="outline" size="sm" className="no-underline">
                       <Github className="mr-2 h-4 w-4" />
                       Code
                     </Button>
                   </a>
                   <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
-                    <Button size="sm">
+                    <Button size="sm" className="no-underline">
                       <ExternalLink className="mr-2 h-4 w-4" />
                       View Project
                     </Button>
@@ -112,8 +112,8 @@ const Projects = () => {
         </div>
         
         <div className="flex justify-center mt-8">
-          <a href="https://github.com/SsemujjuWilliam" target="_blank" rel="noopener noreferrer">
-            <Button variant="outline">
+          <a href="https://github.com/SsemujjuWilliam" target="_blank" rel="noopener noreferrer" className="no-underline">
+            <Button variant="outline" className="no-underline">
               View More Projects on GitHub
             </Button>
           </a>

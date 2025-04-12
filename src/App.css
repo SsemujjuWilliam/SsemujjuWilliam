@@ -1,7 +1,7 @@
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -39,4 +39,21 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* Remove underlines from all links and buttons */
+a, button, .btn {
+  text-decoration: none !important;
+}
+
+/* Ensure no padding overflows on small screens */
+@media (max-width: 640px) {
+  .section-padding {
+    padding: 2rem 1rem;
+  }
+  
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }

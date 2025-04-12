@@ -96,8 +96,21 @@
     @apply bg-background text-foreground;
   }
 
+  /* Remove underlines from all buttons and links within buttons */
+  button, a, .btn {
+    text-decoration: none !important;
+  }
+  
+  button a, a button, button *, a * {
+    text-decoration: none !important;
+  }
+  
+  .link {
+    text-decoration: none !important;
+  }
+
   .section-padding {
-    @apply py-16 px-4 md:py-24 md:px-8 lg:px-16;
+    @apply py-12 px-4 md:py-20 md:px-6 lg:py-24 lg:px-8;
   }
 
   .gradient-text {
