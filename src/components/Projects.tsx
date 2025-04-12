@@ -58,32 +58,20 @@ const Projects = () => {
   ];
   
   return (
-    <section id="projects" className="section-padding bg-secondary/50">
+    <section id="projects" className="py-12 px-4 md:py-20 md:px-6 lg:py-24 lg:px-8">
       <div className="container mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-          className="text-center mb-8"
-        >
+        <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Featured Projects</h2>
           <div className="h-1 w-20 bg-accent mx-auto mb-4"></div>
           <p className="text-foreground/70 max-w-2xl mx-auto">
             A selection of my data science projects showcasing data analysis, 
             data visualizations, and analytical solutions to real-world problems with a focus on the Ugandan context.
           </p>
-        </motion.div>
+        </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {projects.map((project, index) => (
-            <motion.div
-              key={project.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-            >
+            <div key={project.title} className="h-full">
               <Card className="h-full overflow-hidden data-card">
                 <div className="aspect-video w-full overflow-hidden">
                   <img
@@ -123,7 +111,7 @@ const Projects = () => {
                   </a>
                 </CardFooter>
               </Card>
-            </motion.div>
+            </div>
           ))}
         </div>
         
