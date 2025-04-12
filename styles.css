@@ -1,3 +1,4 @@
+
 /* Base Styles */
 :root {
   /* Light Theme Colors */
@@ -16,18 +17,6 @@
   --border: #e5e7eb;
   --input: #e5e7eb;
   --radius: 0.5rem;
-  
-  /* Highlight Colors for Typewriter */
-  --highlight-1: #4f46e5;
-  --highlight-2: #8b5cf6;
-  --highlight-3: #ec4899;
-
-  /* Animation Speeds */
-  --transition-speed: 0.3s;
-  
-  /* Cursor Properties */
-  --cursor-size: 20px;
-  --cursor-follower-size: 40px;
 
   /* Other Variables */
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -54,103 +43,42 @@
   --muted-foreground: #a1a1aa;
   --border: #2e2e2e;
   --input: #2e2e2e;
-  
-  /* Highlight Colors for Typewriter (Dark Theme) */
-  --highlight-1: #9b87f5;
-  --highlight-2: #a78bfa;
-  --highlight-3: #ec4899;
 }
 
-/* Custom Cursor Styles */
-.custom-cursor {
-  position: fixed;
-  width: var(--cursor-size);
-  height: var(--cursor-size);
-  border-radius: 50%;
-  background-color: var(--primary);
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-  opacity: 0.7;
-  transition: transform 0.1s ease, width 0.2s ease, height 0.2s ease, background-color 0.2s ease;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.custom-cursor-follower {
-  position: fixed;
-  width: var(--cursor-follower-size);
-  height: var(--cursor-follower-size);
-  border: 2px solid var(--primary);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9998;
-  transform: translate(-50%, -50%);
-  opacity: 0.3;
-  transition: transform 0.15s ease, width 0.3s ease, height 0.3s ease, border-color 0.3s ease, opacity 0.3s ease;
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
 }
 
-/* Cursor states for interactive elements */
-a:hover ~ .custom-cursor,
-button:hover ~ .custom-cursor {
-  width: calc(var(--cursor-size) * 1.5);
-  height: calc(var(--cursor-size) * 1.5);
-  background-color: var(--accent);
+body {
+  font-family: var(--font-sans);
+  background-color: var(--background);
+  color: var(--foreground);
+  line-height: 1.5;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-a:hover ~ .custom-cursor-follower,
-button:hover ~ .custom-cursor-follower {
-  width: calc(var(--cursor-follower-size) * 0.5);
-  height: calc(var(--cursor-follower-size) * 0.5);
-  border-color: var(--accent);
-  opacity: 0.5;
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
-/* Hide default cursor when custom cursor is active */
-body.custom-cursor-active {
-  cursor: none;
+a:hover {
+  color: var(--accent);
 }
 
-/* Canvas Styles */
-canvas#particle-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  opacity: 0.3;
-}
-
-canvas.hero-canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  opacity: 0.8;
-}
-
-/* Typewriter Effect Styles */
-.typewriter {
-  border-right: 3px solid var(--accent);
-  white-space: nowrap;
-  overflow: hidden;
-  display: inline-block;
-}
-
-.typewriter-highlight-1 {
-  color: var(--highlight-1);
-  font-weight: 700;
-}
-
-.typewriter-highlight-2 {
-  color: var(--highlight-2);
-  font-weight: 700;
-}
-
-.typewriter-highlight-3 {
-  color: var(--highlight-3);
-  font-weight: 700;
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Container */
@@ -683,21 +611,12 @@ canvas.hero-canvas {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
   margin-bottom: 2rem;
-  perspective: 1000px;
 }
 
 .project-card {
   display: flex;
   flex-direction: column;
   height: 100%;
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.project-card.animate-in {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .project-image {
@@ -1093,41 +1012,6 @@ canvas.hero-canvas {
   border: none;
   color: var(--muted-foreground);
   cursor: pointer;
-}
-
-/* Page Transitions */
-.page-transition {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--background);
-  z-index: 9997;
-  transform: translateX(-100%);
-  transition: transform 0.5s ease;
-}
-
-.page-transition.active {
-  transform: translateX(0);
-}
-
-/* Enhanced form validation styles */
-.form-group.error input,
-.form-group.error textarea {
-  border-color: var(--destructive);
-  background-color: rgba(var(--destructive-rgb), 0.05);
-}
-
-.form-error-message {
-  color: var(--destructive);
-  font-size: 0.75rem;
-  margin-top: 0.25rem;
-  display: none;
-}
-
-.form-group.error .form-error-message {
-  display: block;
 }
 
 /* Media Queries */
