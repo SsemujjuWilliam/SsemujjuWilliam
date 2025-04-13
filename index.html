@@ -1,26 +1,968 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>data-viz-vista</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
-
-    <meta property="og:title" content="data-viz-vista" />
-    <meta property="og:description" content="Lovable Generated Project" />
+    <title>William Ssemujju - AI & Data Science Portfolio</title>
+    <meta name="description" content="Portfolio of William Ssemujju, Artificial Intelligence Engineer & Data Scientist" />
+    <meta name="author" content="William Ssemujju" />
+    
+    <meta property="og:title" content="William Ssemujju - AI & Data Science Portfolio" />
+    <meta property="og:description" content="Portfolio of William Ssemujju, Artificial Intelligence Engineer & Data Scientist" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:site" content="@SsemujjuWilliam" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
-    <div id="root"></div>
+    <header id="header" class="fixed-header">
+      <div class="container">
+        <a href="#home" class="logo">
+          <span class="gradient-text">DataSci</span>Portfolio
+        </a>
+        
+        <nav class="desktop-nav">
+          <a href="#home">Home</a>
+          <a href="#showcase">Showcase</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+          <button class="btn btn-primary">Resume</button>
+        </nav>
+        
+        <button id="mobile-menu-toggle" class="mobile-menu-toggle">
+          <span class="menu-icon"></span>
+        </button>
+      </div>
+      
+      <div id="mobile-menu" class="mobile-menu">
+        <div class="container">
+          <a href="#home" onclick="toggleMobileMenu()">Home</a>
+          <a href="#showcase" onclick="toggleMobileMenu()">Showcase</a>
+          <a href="#about" onclick="toggleMobileMenu()">About</a>
+          <a href="#projects" onclick="toggleMobileMenu()">Projects</a>
+          <a href="#skills" onclick="toggleMobileMenu()">Skills</a>
+          <a href="#contact" onclick="toggleMobileMenu()">Contact</a>
+          <button class="btn btn-primary">Resume</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="section hero-section">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-content">
+              <p class="accent-text">Hello, I'm</p>
+              <h1>William Ssemujju</h1>
+              <h2>Artificial Intelligence <span class="gradient-text">Engineer</span> & Data Scientist</h2>
+              <p class="description">
+                Business professional leveraging AI, ML, and Deep Learning for impactful business decisions, particularly within the Ugandan context. 
+                Specializing in building robust and scalable machine learning solutions.
+              </p>
+              <div class="button-group">
+                <a href="#contact" class="btn btn-primary">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5992 12 13.5992C12.3951 13.5992 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Contact Me
+                </a>
+                <a href="https://github.com/SsemujjuWilliam" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 22V18C15.1392 16.7473 14.78 15.4901 14 14.5C17 14.5 20 12.5 20 9C20.08 7.75 19.73 6.52 19 5.5C19.28 4.35 19.28 3.15 19 2C19 2 18 2 16 3.5C13.36 3 10.64 3 8 3.5C6 2 5 2 5 2C4.7 3.15 4.7 4.35 5 5.5C4.27495 6.51588 3.91855 7.75279 4 9C4 12.5 7 14.5 10 14.5C9.61 14.99 9.32 15.55 9.15 16.15C8.98 16.75 8.93 17.38 9 18V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 18C4.49 20 4 16 2 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+            
+            <div class="hero-image">
+              <div class="image-container">
+                <img src="./assets/profile.png" alt="William Ssemujju Portrait">
+              </div>
+            </div>
+          </div>
+          
+          <div class="scroll-indicator">
+            <a href="#about">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 5V19M12 19L19 12M12 19L5 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section about-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>About Me</h2>
+            <div class="section-divider"></div>
+            <p>
+              Business professional with a passion for leveraging AI, ML, and Deep Learning to drive impactful 
+              business decisions, particularly within the Ugandan context.
+            </p>
+          </div>
+          
+          <div class="about-grid">
+            <div class="about-content">
+              <h3>My Journey</h3>
+              <p>
+                I specialize in building robust and scalable machine learning solutions, leveraging a diverse skillset 
+                spanning front-end and back-end development, as well as cloud infrastructure.
+              </p>
+              <p>
+                I'm a continuous learner, always exploring new technologies, particularly in cloud computing, 
+                machine learning, and blockchain. I believe in the power of technology to transform lives, 
+                especially here in Uganda.
+              </p>
+              <div class="education">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 15L8.5 13.5M12 15L15.5 13.5M12 15V20M8.5 13.5L3.5 11L12 6L20.5 11L15.5 13.5M8.5 13.5L6.5 14.5V17.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>B.S. in Business Statistics, Makerere University Business School</span>
+              </div>
+            </div>
+            
+            <div class="about-image">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Data analysis visualization">
+            </div>
+          </div>
+          
+          <h3 class="skills-title">Core Skills</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="icon-container">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M19.4 15C19 17 16 20 12 20C8 20 5 17 4.6 15M4.6 9C5 7 8 4 12 4C16 4 19 7 19.4 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h4>Data Analysis</h4>
+              <p>Proficient in statistical analysis, data cleansing, and insight generation with Python & SQL.</p>
+            </div>
+            <div class="skill-card">
+              <div class="icon-container">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 22L12 20L8 22V18L4 15L8 12V8L12 6L16 8V12L20 15L16 18V22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h4>Machine Learning</h4>
+              <p>Expert in developing predictive models using TensorFlow, PyTorch, and scikit-learn.</p>
+            </div>
+            <div class="skill-card">
+              <div class="icon-container">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 18L22 12L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M8 6L2 12L8 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h4>Data Engineering</h4>
+              <p>Experience building robust data pipelines and architectures for large-scale data processing.</p>
+            </div>
+            <div class="skill-card">
+              <div class="icon-container">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 3H8C9.06087 3 10.0783 3.42143 10.8284 4.17157C11.5786 4.92172 12 5.93913 12 7V21C12 19.9391 11.5786 18.9217 10.8284 18.1716C10.0783 17.4214 9.06087 17 8 17H2V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22 3H16C14.9391 3 13.9217 3.42143 13.1716 4.17157C12.4214 4.92172 12 5.93913 12 7V21C12 19.9391 12.4214 18.9217 13.1716 18.1716C13.9217 17.4214 14.9391 17 16 17H22V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h4>Cloud Computing</h4>
+              <p>Skilled in AWS, Azure, and GCP for deploying scalable machine learning solutions.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Showcase Section -->
+      <section id="showcase" class="section showcase-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>My Data Science <span class="gradient-text">Journey</span></h2>
+            <p>
+              A glimpse into what I'm currently learning and my life as a data scientist, combining
+              technical expertise with real-world applications.
+            </p>
+          </div>
+
+          <div class="carousel-container">
+            <div id="showcase-carousel" class="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item">
+                  <img src="/lovable-uploads/ea36f03d-5995-4f43-8fcd-97be89bfa083.png" alt="Personal portrait photo">
+                  <div class="carousel-caption">
+                    <h3>About Me</h3>
+                    <p>My journey into data science began with a passion for solving problems and understanding patterns in data.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/lovable-uploads/25edd7ef-80b5-407b-82b1-97846ad4ac55.png" alt="Graduation day photo">
+                  <div class="carousel-caption">
+                    <h3>Academic Achievement</h3>
+                    <p>Graduated with honors, ready to apply my knowledge in AI and data science to real-world challenges.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/lovable-uploads/172f9e44-fdbd-4fee-ae06-c5c47ac1e82d.png" alt="Early Python code screenshot">
+                  <div class="carousel-caption">
+                    <h3>Early Coding Days</h3>
+                    <p>One of my first programs at age 16 - a simple algorithm to find the largest and smallest numbers in a list.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/lovable-uploads/60b9d967-8f7b-47c2-89e6-55ce3aeaefed.png" alt="Team photo with colleagues">
+                  <div class="carousel-caption">
+                    <h3>Team Collaboration</h3>
+                    <p>I believe in the power of teamwork to tackle complex data challenges and create innovative solutions.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/lovable-uploads/44519701-15af-4fa1-ba72-faea0b8a24eb.png" alt="With friends photo">
+                  <div class="carousel-caption">
+                    <h3>Friends & Support</h3>
+                    <p>Building a strong network of peers who share my passion for technology and innovation.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/lovable-uploads/56d02a3c-f858-4f14-a715-d650b22d4e9b.png" alt="Nature exploration photo">
+                  <div class="carousel-caption">
+                    <h3>Nature Lover</h3>
+                    <p>Finding inspiration in nature's patterns and complexity - a perfect complement to data science thinking.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/lovable-uploads/ea2ac6fa-e375-402e-9e39-4cfac564ec27.png" alt="Community outreach photo">
+                  <div class="carousel-caption">
+                    <h3>Community Outreach</h3>
+                    <p>Sharing knowledge and spreading positive impact through community engagement and outreach programs.</p>
+                  </div>
+                </div>
+              </div>
+              <button id="carousel-prev" class="carousel-control carousel-prev">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <button id="carousel-next" class="carousel-control carousel-next">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="quote">
+            <p>"The goal is to turn data into information, and information into insight." – Carly Fiorina</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section projects-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Featured Projects</h2>
+            <div class="section-divider"></div>
+            <p>
+              A selection of my data science projects showcasing data analysis, 
+              data visualizations, and analytical solutions to real-world problems with a focus on the Ugandan context.
+            </p>
+          </div>
+          
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Total Data Analysis">
+              </div>
+              <div class="project-header">
+                <h3>Total Data Analysis</h3>
+                <div class="tag-container">
+                  <span class="tag">Python</span>
+                  <span class="tag">Pandas</span>
+                  <span class="tag">Data Analysis</span>
+                </div>
+              </div>
+              <div class="project-content">
+                <p>
+                  Data analysis and visualization project for medical data, demonstrating skills in data preprocessing, exploration, and insights generation.
+                </p>
+              </div>
+              <div class="project-footer">
+                <a href="https://github.com/SsemujjuWilliam/Total-data-analysis" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 22V18C15.1392 16.7473 14.78 15.4901 14 14.5C17 14.5 20 12.5 20 9C20.08 7.75 19.73 6.52 19 5.5C19.28 4.35 19.28 3.15 19 2C19 2 18 2 16 3.5C13.36 3 10.64 3 8 3.5C6 2 5 2 5 2C4.7 3.15 4.7 4.35 5 5.5C4.27495 6.51588 3.91855 7.75279 4 9C4 12.5 7 14.5 10 14.5C9.61 14.99 9.32 15.55 9.15 16.15C8.98 16.75 8.93 17.38 9 18V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 18C4.49 20 4 16 2 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Code
+                </a>
+                <a href="https://github.com/SsemujjuWilliam/Total-data-analysis" target="_blank" rel="noopener noreferrer" class="btn btn-sm">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  View Project
+                </a>
+              </div>
+            </div>
+            
+            <div class="project-card">
+              <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Data Visualization Dashboard">
+              </div>
+              <div class="project-header">
+                <h3>Data Visualization Dashboard</h3>
+                <div class="tag-container">
+                  <span class="tag">Python</span>
+                  <span class="tag">Matplotlib</span>
+                  <span class="tag">Data Visualization</span>
+                </div>
+              </div>
+              <div class="project-content">
+                <p>
+                  Interactive visualization dashboard for HR data analysis, providing insights into employee performance and organizational metrics.
+                </p>
+              </div>
+              <div class="project-footer">
+                <a href="https://github.com/SsemujjuWilliam/data_viz_dash" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 22V18C15.1392 16.7473 14.78 15.4901 14 14.5C17 14.5 20 12.5 20 9C20.08 7.75 19.73 6.52 19 5.5C19.28 4.35 19.28 3.15 19 2C19 2 18 2 16 3.5C13.36 3 10.64 3 8 3.5C6 2 5 2 5 2C4.7 3.15 4.7 4.35 5 5.5C4.27495 6.51588 3.91855 7.75279 4 9C4 12.5 7 14.5 10 14.5C9.61 14.99 9.32 15.55 9.15 16.15C8.98 16.75 8.93 17.38 9 18V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 18C4.49 20 4 16 2 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Code
+                </a>
+                <a href="https://github.com/SsemujjuWilliam/data_viz_dash" target="_blank" rel="noopener noreferrer" class="btn btn-sm">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  View Project
+                </a>
+              </div>
+            </div>
+            
+            <div class="project-card">
+              <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNhbmNlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Breast Cancer Prediction">
+              </div>
+              <div class="project-header">
+                <h3>Breast Cancer Prediction</h3>
+                <div class="tag-container">
+                  <span class="tag">Python</span>
+                  <span class="tag">Machine Learning</span>
+                  <span class="tag">Healthcare</span>
+                </div>
+              </div>
+              <div class="project-content">
+                <p>
+                  Developed a machine learning model to predict breast cancer from medical imaging data, achieving 96% accuracy on test data.
+                </p>
+              </div>
+              <div class="project-footer">
+                <a href="https://github.com/SsemujjuWilliam" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 22V18C15.1392 16.7473 14.78 15.4901 14 14.5C17 14.5 20 12.5 20 9C20.08 7.75 19.73 6.52 19 5.5C19.28 4.35 19.28 3.15 19 2C19 2 18 2 16 3.5C13.36 3 10.64 3 8 3.5C6 2 5 2 5 2C4.7 3.15 4.7 4.35 5 5.5C4.27495 6.51588 3.91855 7.75279 4 9C4 12.5 7 14.5 10 14.5C9.61 14.99 9.32 15.55 9.15 16.15C8.98 16.75 8.93 17.38 9 18V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 18C4.49 20 4 16 2 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Code
+                </a>
+                <a href="https://github.com/SsemujjuWilliam" target="_blank" rel="noopener noreferrer" class="btn btn-sm">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  View Project
+                </a>
+              </div>
+            </div>
+            
+            <div class="project-card">
+              <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="COVID-19 Data Analysis">
+              </div>
+              <div class="project-header">
+                <h3>COVID-19 Data Analysis</h3>
+                <div class="tag-container">
+                  <span class="tag">Python</span>
+                  <span class="tag">Data Analysis</span>
+                  <span class="tag">Healthcare Analytics</span>
+                </div>
+              </div>
+              <div class="project-content">
+                <p>
+                  Analysis of COVID-19 data to identify patterns and insights, with visualizations of case trends across different regions.
+                </p>
+              </div>
+              <div class="project-footer">
+                <a href="https://github.com/SsemujjuWilliam/COVID-19" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 22V18C15.1392 16.7473 14.78 15.4901 14 14.5C17 14.5 20 12.5 20 9C20.08 7.75 19.73 6.52 19 5.5C19.28 4.35 19.28 3.15 19 2C19 2 18 2 16 3.5C13.36 3 10.64 3 8 3.5C6 2 5 2 5 2C4.7 3.15 4.7 4.35 5 5.5C4.27495 6.51588 3.91855 7.75279 4 9C4 12.5 7 14.5 10 14.5C9.61 14.99 9.32 15.55 9.15 16.15C8.98 16.75 8.93 17.38 9 18V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 18C4.49 20 4 16 2 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Code
+                </a>
+                <a href="https://github.com/SsemujjuWilliam/COVID-19" target="_blank" rel="noopener noreferrer" class="btn btn-sm">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  View Project
+                </a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Customer Churn Prediction">
+              </div>
+              <div class="project-header">
+                <h3>Customer Churn Prediction</h3>
+                <div class="tag-container">
+                  <span class="tag">Python</span>
+                  <span class="tag">ML</span>
+                  <span class="tag">Business Analytics</span>
+                </div>
+              </div>
+              <div class="project-content">
+                <p>
+                  Built a predictive model to identify customers at risk of churning, enabling proactive retention strategies for businesses.
+                </p>
+              </div>
+              <div class="project-footer">
+                <a href="https://github.com/SsemujjuWilliam" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 22V18C15.1392 16.7473 14.78 15.4901 14 14.5C17 14.5 20 12.5 20 9C20.08 7.75 19.73 6.52 19 5.5C19.28 4.35 19.28 3.15 19 2C19 2 18 2 16 3.5C13.36 3 10.64 3 8 3.5C6 2 5 2 5 2C4.7 3.15 4.7 4.35 5 5.5C4.27495 6.51588 3.91855 7.75279 4 9C4 12.5 7 14.5 10 14.5C9.61 14.99 9.32 15.55 9.15 16.15C8.98 16.75 8.93 17.38 9 18V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 18C4.49 20 4 16 2 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Code
+                </a>
+                <a href="https://github.com/SsemujjuWilliam" target="_blank" rel="noopener noreferrer" class="btn btn-sm">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  View Project
+                </a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c3RvY2slMjBtYXJrZXR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60" alt="Stock Price Prediction">
+              </div>
+              <div class="project-header">
+                <h3>Stock Price Prediction</h3>
+                <div class="tag-container">
+                  <span class="tag">Python</span>
+                  <span class="tag">Deep Learning</span>
+                  <span class="tag">Time Series</span>
+                </div>
+              </div>
+              <div class="project-content">
+                <p>
+                  Implemented LSTM neural networks to predict stock market trends using historical price data and sentiment analysis.
+                </p>
+              </div>
+              <div class="project-footer">
+                <a href="https://github.com/SsemujjuWilliam" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 22V18C15.1392 16.7473 14.78 15.4901 14 14.5C17 14.5 20 12.5 20 9C20.08 7.75 19.73 6.52 19 5.5C19.28 4.35 19.28 3.15 19 2C19 2 18 2 16 3.5C13.36 3 10.64 3 8 3.5C6 2 5 2 5 2C4.7 3.15 4.7 4.35 5 5.5C4.27495 6.51588 3.91855 7.75279 4 9C4 12.5 7 14.5 10 14.5C9.61 14.99 9.32 15.55 9.15 16.15C8.98 16.75 8.93 17.38 9 18V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 18C4.49 20 4 16 2 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Code
+                </a>
+                <a href="https://github.com/SsemujjuWilliam" target="_blank" rel="noopener noreferrer" class="btn btn-sm">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  View Project
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="view-more">
+            <a href="https://github.com/SsemujjuWilliam" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              View More Projects on GitHub
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section skills-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Technical Skills</h2>
+            <div class="section-divider"></div>
+            <p>
+              My technical expertise spans various AI, ML, and data science technologies, 
+              with a focus on creating impactful business solutions particularly within the Ugandan context.
+            </p>
+          </div>
+          
+          <div class="skills-tabs">
+            <div class="tabs">
+              <button class="tab-button active" data-tab="languages">Languages</button>
+              <button class="tab-button" data-tab="libraries">Libraries</button>
+              <button class="tab-button" data-tab="tools">DevOps & Cloud</button>
+            </div>
+            
+            <div class="tab-content active" id="languages-tab">
+              <div class="skills-container">
+                <div class="skills-list">
+                  <h3>Core Technical Proficiencies</h3>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span>Python</span>
+                      <span>95%</span>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 95%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span>R</span>
+                      <span>85%</span>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 85%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span>SQL</span>
+                      <span>90%</span>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 90%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span>Java</span>
+                      <span>75%</span>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 75%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span>Machine Learning</span>
+                      <span>92%</span>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 92%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span>Deep Learning</span>
+                      <span>85%</span>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 85%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span>Data Visualization</span>
+                      <span>88%</span>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 88%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span>Statistical Analysis</span>
+                      <span>90%</span>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 90%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills-chart">
+                  <div id="languages-chart" class="chart pie-chart"></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tab-content" id="libraries-tab">
+              <div class="skills-container">
+                <div class="skills-list">
+                  <h3>Data Science Libraries & Frameworks</h3>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span>scikit-learn</span>
+                      <span>90%</span>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 90%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span>TensorFlow</span>
+                      <span>85%</span>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 85%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span>PyTorch</span>
+                      <span>82%</span>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 82%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span>Django</span>
+                      <span>78%</span>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 78%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span>Flask</span>
+                      <span>80%</span>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 80%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span>Matplotlib</span>
+                      <span>92%</span>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 92%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span>Seaborn</span>
+                      <span>88%</span>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 88%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span>NLTK</span>
+                      <span>85%</span>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 85%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills-chart">
+                  <div id="libraries-chart" class="chart bar-chart"></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tab-content" id="tools-tab">
+              <div class="skills-container">
+                <div class="skills-list">
+                  <h3>Development & Visualization Tools</h3>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span>Docker</span>
+                      <span>85%</span>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 85%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span>Kubernetes</span>
+                      <span>75%</span>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 75%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span>Jenkins</span>
+                      <span>70%</span>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 70%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span>GitHub Actions</span>
+                      <span>80%</span>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 80%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span>AWS</span>
+                      <span>85%</span>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 85%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span>Azure</span>
+                      <span>80%</span>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 80%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span>GCP</span>
+                      <span>75%</span>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 75%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills-chart">
+                  <div id="tools-chart" class="chart pie-chart"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Contact Section -->
+      <section id="contact" class="section contact-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Get In Touch</h2>
+            <div class="section-divider"></div>
+            <p>
+              Have a project in mind or just want to connect? Feel free to reach out 
+              and I'll get back to you as soon as possible.
+            </p>
+          </div>
+          
+          <div class="contact-grid">
+            <div class="contact-form">
+              <div class="card">
+                <h3>Send Me a Message</h3>
+                <form id="contact-form">
+                  <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-full">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Send Message
+                  </button>
+                </form>
+              </div>
+            </div>
+            
+            <div class="contact-info">
+              <div class="contact-details">
+                <h3>Contact Information</h3>
+                <div class="info-cards">
+                  <div class="info-card">
+                    <div class="icon-container">
+                      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5992 12 13.5992C12.3951 13.5992 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="info-label">Email</p>
+                      <p>SsemujjuWilliam@outlook.com</p>
+                    </div>
+                  </div>
+                  <div class="info-card">
+                    <div class="icon-container">
+                      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8325 20.7293C21.7209 20.9845 21.5573 21.2136 21.3521 21.4019C21.1469 21.5901 20.905 21.7335 20.6447 21.8227C20.3844 21.9119 20.1094 21.9447 19.835 21.92C16.4517 21.5856 13.1986 20.5341 10.32 18.85C7.66207 17.3147 5.37498 15.0276 3.84 12.37C2.14085 9.47347 1.08851 6.19415 0.77 2.78998C0.745555 2.51698 0.77819 2.24323 0.866695 1.98413C0.955201 1.72503 1.09788 1.48414 1.286 1.27998C1.47411 1.07583 1.70259 0.912621 1.95693 0.800678C2.21126 0.688735 2.48615 0.630905 2.764 0.629981H5.764C6.23746 0.625699 6.697 0.786195 7.06818 1.08363C7.43935 1.38106 7.70166 1.79811 7.808 2.26298C7.99103 3.12429 8.26811 3.96506 8.634 4.76998C8.77907 5.09521 8.83479 5.45391 8.79433 5.80658C8.75388 6.15925 8.61865 6.49332 8.401 6.76998L7.101 8.06998C8.5102 10.8352 10.7648 13.0898 13.53 14.5L14.83 13.2C15.1067 12.9824 15.4407 12.8471 15.7934 12.8067C16.1461 12.7662 16.5048 12.8219 16.83 12.967C17.6349 13.3329 18.4757 13.61 19.337 13.793C19.8098 13.9016 20.233 14.1702 20.5304 14.55C20.8278 14.9297 20.9834 15.3999 20.97 15.88L22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="info-label">Phone</p>
+                      <p>+256 771 123456</p>
+                    </div>
+                  </div>
+                  <div class="info-card">
+                    <div class="icon-container">
+                      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="info-label">Location</p>
+                      <p>Kampala, Uganda</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="social-connect">
+                <h3>Connect With Me</h3>
+                <div class="social-icons">
+                  <a href="https://www.linkedin.com/in/william-ssemujju/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M6 9H2V21H6V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                  <a href="https://github.com/SsemujjuWilliam" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15 22V18C15.1392 16.7473 14.78 15.4901 14 14.5C17 14.5 20 12.5 20 9C20.08 7.75 19.73 6.52 19 5.5C19.28 4.35 19.28 3.15 19 2C19 2 18 2 16 3.5C13.36 3 10.64 3 8 3.5C6 2 5 2 5 2C4.7 3.15 4.7 4.35 5 5.5C4.27495 6.51588 3.91855 7.75279 4 9C4 12.5 7 14.5 10 14.5C9.61 14.99 9.32 15.55 9.15 16.15C8.98 16.75 8.93 17.38 9 18V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M9 18C4.49 20 4 16 2 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                  <a href="https://twitter.com/SsemujjuWilliam" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M23 3.01006C22.0424 3.68553 20.9821 4.20217 19.86 4.54006C19.2577 3.84757 18.4573 3.35675 17.567 3.13398C16.6767 2.91122 15.7395 2.96725 14.8821 3.29451C14.0247 3.62177 13.2884 4.20446 12.773 4.96377C12.2575 5.72309 11.9877 6.62239 12 7.54006V8.54006C10.2426 8.58562 8.50127 8.19587 6.93101 7.4055C5.36074 6.61513 4.01032 5.44869 3 4.01006C3 4.01006 -1 13.0101 8 17.0101C5.94053 18.408 3.48716 19.109 1 19.0101C10 24.0101 21 19.0101 21 7.51006C20.9991 7.23151 20.9723 6.95365 20.92 6.68006C21.9406 5.67355 22.6608 4.40277 23 3.01006Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                  <a href="https://wa.me/message/C6YVX7OIAJLVN1" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.987 3.01392C19.8116 1.83093 18.415 0.89252 16.8784 0.250821C15.3419 -0.390879 13.6956 -0.322441 12.1981 0.447593C10.7006 1.21763 9.40226 2.56017 8.4679 4.30223C7.53354 6.04429 7.00631 8.10947 7 10.2139V11.2139C4.93939 11.3404 2.94731 12.0794 1.286 13.3439C-0.3753 14.6085 -0.64123 16.3065 0.579 18.0039C1.79923 19.7014 4.41063 21.3485 8 22.6139C13.988 24.7762 21.005 24.7762 21.005 24.7762C21.005 24.7762 23.5 18.7139 23.5 13.2139C23.5031 12.3078 23.3295 11.4102 22.9908 10.5765C22.6521 9.74291 22.1554 8.98936 21.528 8.36397C20.9007 7.73859 20.1529 7.24338 19.3239 6.90552C18.4949 6.56766 17.6007 6.39419 16.698 6.39386C16.698 6.39386 15.988 4.19386 14.807 3.01286" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              
+              <div class="location">
+                <h3>Office Location</h3>
+                <div class="map-container">
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127672.75772082225!2d32.5472257371521!3d0.3177049654069289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbc0f8b19684d%3A0x8442ab898f916bdf!2sKampala%2C%20Uganda!5e0!3m2!1sen!2sus!4v1653697051747!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <h3><span class="accent-text">William</span> Ssemujju</h3>
+            <p>
+              Passionate Artificial Intelligence Engineer crafting impactful and innovative solutions, 
+              infused with a touch of Ugandan ingenuity.
+            </p>
+          </div>
+          
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/in/william-ssemujju/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 9H2V21H6V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="https://github.com/SsemujjuWilliam" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 22V18C15.1392 16.7473 14.78 15.4901 14 14.5C17 14.5 20 12.5 20 9C20.08 7.75 19.73 6.52 19 5.5C19.28 4.35 19.28 3.15 19 2C19 2 18 2 16 3.5C13.36 3 10.64 3 8 3.5C6 2 5 2 5 2C4.7 3.15 4.7 4.35 5 5.5C4.27495 6.51588 3.91855 7.75279 4 9C4 12.5 7 14.5 10 14.5C9.61 14.99 9.32 15.55 9.15 16.15C8.98 16.75 8.93 17.38 9 18V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 18C4.49 20 4 16 2 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="https://twitter.com/SsemujjuWilliam" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23 3.01006C22.0424 3.68553 20.9821 4.20217 19.86 4.54006C19.2577 3.84757 18.4573 3.35675 17.567 3.13398C16.6767 2.91122 15.7395 2.96725 14.8821 3.29451C14.0247 3.62177 13.2884 4.20446 12.773 4.96377C12.2575 5.72309 11.9877 6.62239 12 7.54006V8.54006C10.2426 8.58562 8.50127 8.19587 6.93101 7.4055C5.36074 6.61513 4.01032 5.44869 3 4.01006C3 4.01006 -1 13.0101 8 17.0101C5.94053 18.408 3.48716 19.109 1 19.0101C10 24.0101 21 19.0101 21 7.51006C20.9991 7.23151 20.9723 6.95365 20.92 6.68006C21.9406 5.67355 22.6608 4.40277 23 3.01006Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="mailto:SsemujjuWilliam@outlook.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5992 12 13.5992C12.3951 13.5992 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/message/C6YVX7OIAJLVN1" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.987 3.01392C19.8116 1.83093 18.415 0.89252 16.8784 0.250821C15.3419 -0.390879 13.6956 -0.322441 12.1981 0.447593C10.7006 1.21763 9.40226 2.56017 8.4679 4.30223C7.53354 6.04429 7.00631 8.10947 7 10.2139V11.2139C4.93939 11.3404 2.94731 12.0794 1.286 13.3439C-0.3753 14.6085 -0.64123 16.3065 0.579 18.0039C1.79923 19.7014 4.41063 21.3485 8 22.6139C13.988 24.7762 21.005 24.7762 21.005 24.7762C21.005 24.7762 23.5 18.7139 23.5 13.2139C23.5031 12.3078 23.3295 11.4102 22.9908 10.5765C22.6521 9.74291 22.1554 8.98936 21.528 8.36397C20.9007 7.73859 20.1529 7.24338 19.3239 6.90552C18.4949 6.56766 17.6007 6.39419 16.698 6.39386C16.698 6.39386 15.988 4.19386 14.807 3.01286" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-divider"></div>
+        
+        <div class="footer-bottom">
+          <p>&copy; <span id="current-year"></span> William Ssemujju. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a id="back-to-top" href="#" class="back-to-top">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+
+    <div id="toast" class="toast">Message sent successfully!</div>
+
+    <script src="script.js"></script>
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
