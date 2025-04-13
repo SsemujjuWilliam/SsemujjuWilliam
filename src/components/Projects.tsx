@@ -8,30 +8,6 @@ import { motion } from "framer-motion";
 const Projects = () => {
   const projects = [
     {
-      title: "Breast Cancer Prediction",
-      description: "Machine learning model to predict breast cancer diagnosis (malignant/benign) with high accuracy using Wisconsin Diagnostic dataset and various ML algorithms.",
-      image: "https://images.unsplash.com/photo-1579154341098-e4e158cc7f55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-      tags: ["Python", "Scikit-Learn", "Medical AI", "Classification"],
-      githubLink: "https://github.com/SsemujjuWilliam/breast-cancer-prediction",
-      liveLink: "https://github.com/SsemujjuWilliam/breast-cancer-prediction"
-    },
-    {
-      title: "Customer Churn Prediction",
-      description: "Developed a predictive model to identify customers likely to churn, helping businesses implement targeted retention strategies and reduce customer loss.",
-      image: "https://images.unsplash.com/photo-1556155092-490a1ba16284?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-      tags: ["Python", "Machine Learning", "Business Analytics", "XGBoost"],
-      githubLink: "https://github.com/SsemujjuWilliam/customer-churn-prediction",
-      liveLink: "https://github.com/SsemujjuWilliam/customer-churn-prediction"
-    },
-    {
-      title: "Stock Price Prediction",
-      description: "Time series analysis and prediction model for stock prices using LSTM neural networks, integrating market sentiment analysis for improved accuracy.",
-      image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-      tags: ["Python", "Deep Learning", "LSTM", "Financial Analysis"],
-      githubLink: "https://github.com/SsemujjuWilliam/stock-price-prediction",
-      liveLink: "https://github.com/SsemujjuWilliam/stock-price-prediction"
-    },
-    {
       title: "Total Data Analysis",
       description: "Data analysis and visualization project for medical data, demonstrating skills in data preprocessing, exploration, and insights generation.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
@@ -54,24 +30,44 @@ const Projects = () => {
       tags: ["Python", "Data Analysis", "Healthcare Analytics", "Visualization"],
       githubLink: "https://github.com/SsemujjuWilliam/COVID-19",
       liveLink: "https://github.com/SsemujjuWilliam/COVID-19"
+    },
+    {
+      title: "General Data Analysis",
+      description: "Comprehensive data analysis project showcasing data cleaning, preprocessing, and visualization techniques for varied datasets.",
+      image: "https://images.unsplash.com/photo-1535320903710-d993d3d77d29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      tags: ["Python", "Pandas", "Data Science", "Statistical Analysis"],
+      githubLink: "https://github.com/SsemujjuWilliam/GENERAL-DATA-ANALYSIS",
+      liveLink: "https://github.com/SsemujjuWilliam/GENERAL-DATA-ANALYSIS"
     }
   ];
   
   return (
-    <section id="projects" className="py-12 px-4 md:py-20 md:px-6 lg:py-24 lg:px-8">
+    <section id="projects" className="section-padding">
       <div className="container mx-auto">
-        <div className="text-center mb-8">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="text-center mb-12"
+        >
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Featured Projects</h2>
-          <div className="h-1 w-20 bg-accent mx-auto mb-4"></div>
+          <div className="h-1 w-20 bg-accent mx-auto mb-6"></div>
           <p className="text-foreground/70 max-w-2xl mx-auto">
             A selection of my data science projects showcasing data analysis, 
             data visualizations, and analytical solutions to real-world problems with a focus on the Ugandan context.
           </p>
-        </div>
+        </motion.div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <div key={project.title} className="h-full">
+            <motion.div
+              key={project.title}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true }}
+            >
               <Card className="h-full overflow-hidden data-card">
                 <div className="aspect-video w-full overflow-hidden">
                   <img
@@ -98,26 +94,26 @@ const Projects = () => {
                 </CardContent>
                 <CardFooter className="flex justify-between">
                   <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                    <Button variant="outline" size="sm" className="no-underline">
+                    <Button variant="outline" size="sm">
                       <Github className="mr-2 h-4 w-4" />
                       Code
                     </Button>
                   </a>
                   <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
-                    <Button size="sm" className="no-underline">
+                    <Button size="sm">
                       <ExternalLink className="mr-2 h-4 w-4" />
                       View Project
                     </Button>
                   </a>
                 </CardFooter>
               </Card>
-            </div>
+            </motion.div>
           ))}
         </div>
         
         <div className="flex justify-center mt-8">
-          <a href="https://github.com/SsemujjuWilliam" target="_blank" rel="noopener noreferrer" className="no-underline">
-            <Button variant="outline" className="no-underline">
+          <a href="https://github.com/SsemujjuWilliam" target="_blank" rel="noopener noreferrer">
+            <Button variant="outline">
               View More Projects on GitHub
             </Button>
           </a>
