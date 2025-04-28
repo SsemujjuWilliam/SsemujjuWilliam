@@ -1,5 +1,3 @@
-
-import { motion } from "framer-motion";
 import { 
   Carousel,
   CarouselContent,
@@ -58,13 +56,7 @@ const Showcase = () => {
   return (
     <section id="showcase" className="section-padding bg-secondary/50">
       <div className="container mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-          className="text-center mb-12"
-        >
+        <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
             My Data Science <span className="gradient-text">Journey</span>
           </h2>
@@ -72,15 +64,9 @@ const Showcase = () => {
             A glimpse into what I'm currently learning and my life as a data scientist, combining
             technical expertise with real-world applications.
           </p>
-        </motion.div>
+        </div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
-          viewport={{ once: true }}
-          className="mt-12"
-        >
+        <div className="mt-12">
           <Carousel
             opts={{
               align: "start",
@@ -97,7 +83,7 @@ const Showcase = () => {
                         <img 
                           src={item.image} 
                           alt={item.alt} 
-                          className="w-full h-full object-cover transition-transform hover:scale-105"
+                          className="w-full h-full object-cover"
                         />
                       </div>
                       <div className="p-6">
@@ -114,19 +100,13 @@ const Showcase = () => {
               <CarouselNext className="position-static" />
             </div>
           </Carousel>
-        </motion.div>
+        </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          viewport={{ once: true }}
-          className="mt-12 text-center"
-        >
+        <div className="mt-12 text-center">
           <p className="text-foreground/70 italic">
             "The goal is to turn data into information, and information into insight." – Carly Fiorina
           </p>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
