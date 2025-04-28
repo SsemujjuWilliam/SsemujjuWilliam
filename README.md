@@ -1,45 +1,73 @@
-# William Ssemujju 🇺🇬
-Business professional with a B.S. in Business Statistics from Makerere University Business School. I'm passionate about leveraging AI, ML, and Deep Learning to drive impactful business decisions. My focus is on applying these technologies to solve complex problems, improve efficiency, and gain a competitive edge, particularly within the Ugandan context.
+# Welcome to your Lovable project
 
-Passionate Artificial Intelligence Engineer crafting impactful and innovative solutions, infused with a touch of Ugandan ingenuity. I specialize in building robust and scalable machine Learning solutions, leveraging a diverse skillset spanning front-end and back-end development, as well as cloud infrastructure. I'm a continuous learner, always exploring new technologies, particularly in cloud computing, machine learning, and blockchain.  I believe in the power of technology to transform lives, especially here in Uganda.
+## Project info
 
-## Skills
+**URL**: https://lovable.dev/projects/8ae5685f-f5bc-42aa-8864-041d5ce81d2f
 
-* **Languages:** Python, R,  SQL, Java
-* **Frameworks/Libraries:** scikit-learn (sklearn), TensorFlow, PyTorch,matplotlib, seaborn, NLTK (Natural Language Toolkit,Django, Flask
-* **Databases:** PostgreSQL, MySQL, MongoDB
-* **DevOps:** Docker, Kubernetes, Jenkins, GitHub Actions
-* **Cloud Platforms:** AWS, Azure, GCP
+## How can I edit this code?
 
+There are several ways of editing your application.
 
-## Currently Learning
+**Use Lovable**
 
-* Advanced cloud computing with AWS and Azure.
-* Machine learning and data science with Python.
-* Blockchain development and smart contracts.
+Simply visit the [Lovable Project](https://lovable.dev/projects/8ae5685f-f5bc-42aa-8864-041d5ce81d2f) and start prompting.
 
-## Projects & Contributions
+Changes made via Lovable will be committed automatically to this repo.
 
-*(This section is highly recommended. Add links to your projects, especially any open-source contributions.  Even small projects show initiative.)*
+**Use your preferred IDE**
 
-* [Project Name 1](link-to-project-1): Brief description (e.g., A web app for Ugandan farmers to access market prices).
-* [Contribution to Open Source Project](link-to-contribution): Brief description (e.g., Improved the performance of a popular Python library).
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-## Connect
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-* **Email:** SsemujjuWilliam@outlook.com
-* **LinkedIn:** [William Ssemujju](https://www.linkedin.com/in/william-ssemujju/)
-* **Twitter:** [@SsemujjuWilliam](https://twitter.com/SsemujjuWilliam)
+Follow these steps:
 
-## Support My Work (Kawa) ☕
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-Enjoy my work?  Buy me a "kawa" (coffee) and fuel my coding adventures!  [Buy Me a Coffee](link-to-your-coffee-platform)
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
-## GitHub Stats
+# Step 3: Install the necessary dependencies.
+npm i
 
-![William's GitHub stats](https://github-readme-stats.vercel.app/api?username=SsemujjuWilliam&show_icons=true&theme=radical)
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
 
----
+**Edit a file directly in GitHub**
 
-Let's connect and discuss your next project!  I'm particularly interested in projects that benefit Uganda and Africa.
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
+**Use GitHub Codespaces**
+
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
+
+## What technologies are used for this project?
+
+This project is built with:
+
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
+
+## How can I deploy this project?
+
+Simply open [Lovable](https://lovable.dev/projects/8ae5685f-f5bc-42aa-8864-041d5ce81d2f) and click on Share -> Publish.
+
+## Can I connect a custom domain to my Lovable project?
+
+Yes it is!
+
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
