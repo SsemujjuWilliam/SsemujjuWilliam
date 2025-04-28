@@ -5,7 +5,7 @@ import {
   CarouselNext,
   CarouselPrevious
 } from "@/components/ui/carousel";
-import { Card, CardContent } from "@/components/ui/card";
+import ShowcaseItem from "./showcase/ShowcaseItem";
 
 const showcaseItems = [
   {
@@ -77,21 +77,7 @@ const Showcase = () => {
             <CarouselContent>
               {showcaseItems.map((item, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 pl-4">
-                  <Card className="data-card h-full">
-                    <CardContent className="p-0">
-                      <div className="aspect-video w-full overflow-hidden bg-muted">
-                        <img 
-                          src={item.image} 
-                          alt={item.alt} 
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                      <div className="p-6">
-                        <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                        <p className="text-foreground/70">{item.description}</p>
-                      </div>
-                    </CardContent>
-                  </Card>
+                  <ShowcaseItem {...item} />
                 </CarouselItem>
               ))}
             </CarouselContent>
